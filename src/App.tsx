@@ -1,35 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import Title from "./components/title";
+import Intro from "./components/intro";
+import Hobby1 from "./components/hobby1";
+//import Hobby2 from "./components/hobby2";
+import "./App.css";
+import * as React from "react";
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+const App: React.FC =() => {
+    return (
 
-export default App
+        <div className={"app"}>
+
+            <Title className={"CS3733-D25"} teamNum={12} hobby1={"Lifting"} hobby2={"Makeup"}/>
+            <Intro name1={"Aliza Khalil"} name2={"Zahra Karim"}/>
+            <Hobby1 name={"Aliza khalil"} hobby={"Lifting"} image={"/public/lift.jpg"}/>
+            //ADD Hobby 2!
+        </div>
+    );
+};
+
+export default App;

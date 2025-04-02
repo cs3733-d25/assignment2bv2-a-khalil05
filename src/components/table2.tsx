@@ -8,12 +8,14 @@ const Table2: React.FC=() => {
 
                 <caption>
                     Rating Makeup Brands
-                </caption>3
+                </caption>
+                <br />
 
                 <tr>
                     <th>Brand</th>
                     <th>Pricing</th>
                     <th> Quality</th>
+
                 </tr>
 
                 <tr>

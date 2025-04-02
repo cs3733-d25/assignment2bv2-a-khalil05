@@ -13,7 +13,7 @@ const Form1: React.FC=() => {
                 <label htmlFor="email"> Enter your Email:</label>
                 <input type="text" id="email"  name ="email" placeholder="Enter your Email" required/> <br/> <br/>
 
-                <p>Select the Muscle Group you want to work on:</p>
+                <label htmlFor="group">Select the Muscle Group you want to work on:</label>
                 <input type="checkbox" id="legs" name="Muscle" value="legs"/>
                 <label htmlFor="legs">Legs</label>
                 <br/> <br/>
@@ -36,7 +36,7 @@ const Form1: React.FC=() => {
                 <label htmlFor="other">Chest</label>
                 <br/> <br/>
 
-                <p>How Experienced are you with Lifting:</p>
+                <label htmlFor="experience">How experienced are you with Lifting:</label>
 
                 <input type="radio" id="none" name="Experience" value="none"/>
                 <label htmlFor="none">None</label>

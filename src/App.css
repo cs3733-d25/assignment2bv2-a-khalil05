@@ -1,42 +1,131 @@
-#root {
-  max-width: 1280px;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 20px;
+}
+
+/* Title Component */
+h1 {
+  font-size: 4rem;
+  color: #145ecc;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2 {
+  font-size: 3rem;
+  color: #0e3f8a;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-size: 1.5rem;
+  color: #072f6a;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+section {
+  margin: 20px 0;
 }
 
-.card {
-  padding: 2em;
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+table, th, td {
+  border: 1px solid #ddd;
 }
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #b1ccd3;
+  font-weight: bold;
+  color: #0a3968;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  width: auto;
+}
+
+form button {
+  padding: 10px;
+  background-color: #145ecc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+form button:hover {
+  background-color: #05275c;
+}
+
+
+form .agreement-label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-right: 10px;
+}
+

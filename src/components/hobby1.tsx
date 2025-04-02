@@ -20,7 +20,7 @@ const Hobby1=({name, hobby, image}:HobbyProps)=>{
     return (
         <div>
             <h2>
-                {name}'s Hobby is: {hobby}
+                {name}'s Hobby is: {hobby}. So cool!
             </h2>
             <img src={image} alt={hobby} width="200"/>
             <List1 />
